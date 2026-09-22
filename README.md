@@ -1,5 +1,12 @@
 # Dynamic Island for Omarchy
 
+> **This repo is only packaging.** The project itself lives at
+> **[lunanoir21/quickshell-dynamic-island](https://github.com/lunanoir21/quickshell-dynamic-island)**
+> — source, [changelog](https://github.com/lunanoir21/quickshell-dynamic-island/blob/main/CHANGELOG.md),
+> docs, demo video and issue tracker are all there. Please open bugs and
+> feature requests upstream; issues here are limited to the Omarchy wrapper
+> itself (manifest, `Service.qml`, vendoring).
+
 [Dynamic Island](https://github.com/lunanoir21/quickshell-dynamic-island)
 packaged as an Omarchy shell plugin: a Hyprland-native "dynamic island" —
 media playback (with lyrics and queue), calls, notifications, a pixel-matrix
@@ -10,7 +17,9 @@ This repo is a thin wrapper. All of the island's actual behavior lives in
 [`quickshell-dynamic-island`](https://github.com/lunanoir21/quickshell-dynamic-island);
 the `dynamic-island/` directory here is a vendored, pinned copy of it
 (currently `2026.09.23`), and `Service.qml` is the one line Omarchy's plugin
-loader needs to start it.
+loader needs to start it. Nothing is developed here — to follow the project,
+read the release notes, or see what changed between vendored pins, go to the
+upstream repo.
 
 `manifest.json` declares `kinds: ["service"]` with `keepLoaded: true` — the
 same shape as Omarchy's own built-in `background`, `lock` and
@@ -57,6 +66,9 @@ marketplace clones a single ref of this repo, and a submodule would need an
 extra `--recurse-submodules` step outside the plugin loader's control. To
 pick up a new quickshell-dynamic-island release, copy its files over
 `dynamic-island/`, bump `version` in `manifest.json`, and commit.
+
+Watch the [upstream releases](https://github.com/lunanoir21/quickshell-dynamic-island/releases)
+(or its changelog) to know when a new pin is worth taking.
 
 ## License
 
