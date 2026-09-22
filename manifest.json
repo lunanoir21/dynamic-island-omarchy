@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.lunanoir21.dynamic-island",
+  "name": "Dynamic Island",
+  "version": "2026.09.23",
+  "author": "lunanoir21",
+  "license": "MIT",
+  "description": "A Dynamic Island-style widget for Hyprland — media, calls, notifications, timers and a pixel clock in one pill that expands from the top of the screen.",
+  "kinds": ["service"],
+  "keepLoaded": true,
+  "entryPoints": { "service": "Service.qml" }
+}
